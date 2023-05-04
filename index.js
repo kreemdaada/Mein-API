@@ -3,9 +3,7 @@ const rp = require('request-promise');
 
 
 const app = express();
-const PORT = process.env.PORT || 5000;
-
-//const apikey = 'ffee4d6a0750cb4f4805af46f8577156'; 
+const PORT = process.env.PORT || 5000; 
 
 const generateSraperUrl = (apikey) =>`http://api.scraperapi.com?api_key=${apikey}&autoparse-true`;
 
